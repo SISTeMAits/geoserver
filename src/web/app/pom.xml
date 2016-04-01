@@ -60,7 +60,20 @@
    </repository>
 </distributionManagement>
     
-  <dependencies>  
+  <dependencies>
+   
+   <!-- Giorgio : add wps service -->
+   <dependency>
+          <groupId>org.geoserver.extension</groupId>
+          <artifactId>gs-wps-core</artifactId>
+          <version>${project.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>org.geoserver.extension</groupId>
+          <artifactId>gs-web-wps</artifactId>
+          <version>${project.version}</version>
+        </dependency>
+     
     <dependency>
     <groupId>org.geotools.jdbc</groupId>
     <artifactId>gt-jdbc-oracle</artifactId>
